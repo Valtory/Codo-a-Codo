@@ -1,11 +1,15 @@
 
 body{
     font-family: 'Lora';
+
+}
+.body{
+    font-family: 'Lora';
     background: url(images/fondo.jpg);
     background-repeat: repeat;
 }
 
-body::before{
+.body::before{
     content:"";
     background-image: linear-gradient(to top, #9890e3 0%, #b1f4cf 100%);
     width: 100%;
@@ -110,12 +114,6 @@ nav{
 }
 
 
-/* clearfix es un div que me permite limpiar los estilos de lo que este por debajo */
-.clearfix{
-    clear:both;
-    }
-
-
 /* Bandera al lado del H1 titulo principal de la pagina */
 #ribbon {
         width: 0px;
@@ -160,8 +158,114 @@ nav{
 }
 
 
-@media screen and (max-width: 700px) {
-    body, .superdiv {   
+/* clearfix es un div que me permite limpiar los estilos de lo que este por debajo 
+.clearfix{
+    clear:both;
+    }
+*/
+
+/* formulario de contacto */
+
+*{
+    margin: auto;
+    padding: auto;
+    box-sizing: border-box;
+    outline: none;
+    font-family: 'lora';
+    align-content: center;
+    
+}
+
+.body2{
+    font-family: 'Lora';
+    background: url(images/fondo.jpg);
+    background-repeat: repeat;
+    margin-top: 30px;
+}
+
+.wrapper{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    max-width: 550px;
+    background:rgba(0, 0, 0, 0.8);
+    padding: 30px;
+    border-radius: 5 px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+.wrapper .title h1 {
+    color: #ccc7f5;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.contact-form{
+        display: flex;
+}
+
+.input-fields{
+    display: flex;
     flex-direction: column;
+    margin-right: 4%;
+    
+    }
+
+    .input-fields,
+    .msg{
+        width: 48%;
+    }
+
+.input-fields .input,
+.msg textarea{
+    margin: 10px 0;
+    background: transparent;
+    border: 0;
+    border-bottom: 2px solid #c5ecfd;
+    padding: 10px;
+    color: #ccc7f5;
+    width: 100%;
+}
+
+.msg textarea{
+    height: 212px;
+}
+::-webkit-input-placeholder{
+    /* para Chrome, opera o safari*/
+    color: #ccc7f5
+}
+
+::-moz-input-placeholder{
+    /* para firefox 19 */
+    color: #ccc7f5;
+}
+
+::-ms-input-placeholder{
+    /* para IE 10+ */
+    color: #ccc7f5;
+}
+
+.btn{
+    background: #9d95e3;
+    text-align: center;
+    padding: 15px;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+@media screen and (max-width: 600px) {
+    .body2, .superdiv , .contact-form{   
+    flex-direction: column;
+    }
+
+    .msg textarea{
+        height: 80px;
+    }
+    .input-fields,
+    msg{
+        width: 100%;
     }
 }
