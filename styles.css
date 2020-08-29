@@ -43,21 +43,60 @@ nav{
 
 }
 
-
-#tabla{
-    opacity: 100%;
-    text-align: center;
+/* clase superdiv para las imagenes en flex y sus respectivos textos */
+.superdiv{
     width: 50%;
+    height: auto;
     margin: auto;
-    overflow-x:auto;
+    overflow: hidden;
+    border: solid;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px;
     
 }
 
-#titulomujer{
+.superdiv p{
     text-align: center;
-    font-size: 2em ;
-    
+    margin: auto;
+
 }
+
+
+#a{
+    order:1;
+    display: inline-flex;
+    padding: 7px;
+}
+
+#a img{
+    margin-right: 20px;
+}
+
+#b{
+    order:2;
+    display: inline-flex;
+    padding: 7px;
+}
+
+#b img{
+    margin-left: 20px;
+}
+
+#c{
+    order:3;
+    display: inline-flex;
+    padding: 7px;
+}
+
+#c img{
+    margin-right: 20px;
+}
+
+
+
+/* Propiedades del footer */
 .pie{
     text-align:center;
     margin-bottom: 5px;
@@ -71,10 +110,14 @@ nav{
     font-weight: bold;
 }
 
+
+/* clearfix es un div que me permite limpiar los estilos de lo que este por debajo */
 .clearfix{
     clear:both;
     }
 
+
+/* Bandera al lado del H1 titulo principal de la pagina */
 #ribbon {
         width: 0px;
         height: 120px;
@@ -84,6 +127,7 @@ nav{
         float:left;
     }
     
+/* Titulo principal de la pagina */
     .casititulo{
         float:left;margin-left:10px;
         font-weight: bold;
@@ -91,17 +135,22 @@ nav{
         
     }
     
-
+/* Propiedades de la clase del segundo titulo > Una mujer puede Jugar con espadas?  */
     .segundotitulo{
         align-content: center;
         text-align: center;
         padding-top: 30px;
         margin-top: 30px;
-        
-        
+    }
+
+    .segundotitulo h2{
+        text-align: center;
+        font-size: 2em ;
     }
 
 
+
+/* Forma que le di a las imagenes dentro del superdiv */
 .shape {
     display: inline-block;
     width: 250;
@@ -109,4 +158,11 @@ nav{
     border: 2px solid #9d95e3;
     border-radius: 30px 30px 30px 30px;
     
+}
+
+
+@media screen and (max-width: 700px) {
+    body, table {   
+    flex-direction: column;
+    }
 }
