@@ -71,16 +71,20 @@ nav{
     order:1;
     display: inline-flex;
     padding: 7px;
+    font-size: 20px;
+    
 }
 
 #a img{
     margin-right: 20px;
 }
 
+
 #b{
     order:2;
     display: inline-flex;
     padding: 7px;
+    font-size: 20px;
 }
 
 #b img{
@@ -91,6 +95,7 @@ nav{
     order:3;
     display: inline-flex;
     padding: 7px;
+    font-size: 20px;
 }
 
 #c img{
@@ -145,6 +150,13 @@ nav{
         font-size: 2em ;
     }
 
+    .segundotitulo p{
+        text-align: center;
+        padding: 20px;
+        margin-right: 20%;
+        margin-left: 20%;
+    }
+
 
 
 /* Forma que le di a las imagenes dentro del superdiv */
@@ -155,6 +167,11 @@ nav{
     border: 5px solid #9d95e3;
     border-radius: 30px 30px 30px 30px;
     
+}
+
+.shape img{
+    align-content: left;
+
 }
 
 
@@ -255,6 +272,8 @@ nav{
     cursor: pointer;
     text-transform: uppercase;
 }
+
+
 
 @media screen and (max-width: 600px) {
     .body2, .superdiv , .contact-form{   
