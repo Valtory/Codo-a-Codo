@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/c931e7dd2a.js" crossorigin="anonymous"></script>
     <title>Contacto</title>
 </head>
 
@@ -27,19 +28,23 @@
 
 
     <div class="wrapper">
+        <form action="https://formspree.io/myynqajj"
+        method="POST">
         <div class="title">
             <h1>Contactame!</h1></div>
         <div class="contact-form">
             <div class="input-fields">
-                <input type="text" class="input" placeholder="Nombre">
+                <input type="text" name="name" class="input" placeholder="Nombre">
                 <input type="text" class="input" placeholder="Apellido">
-                <input type="text" class="input" placeholder="Email">
+                <input type="email" name="_replyto" class="input" placeholder="Email">
                 <input type="text" class="input" placeholder="Asunto">
             </div>
                 <div class="msg">
                 <textarea placeholder="Mensaje"></textarea>
-                <div class="btn">Enviar</div>
-            </div>
+                <button class="btn" type="submit" value="send">Enviar</button>
+                </div>
+            </form>
+        </div>
         
     </div> 
     </div>
