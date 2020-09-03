@@ -8,6 +8,13 @@
     <title>Contacto</title>
 </head>
 
+<header >
+    <div id="ribbon"></div>
+
+    <h1 class="casititulo">Swords & Girls</h1>
+
+
+</header>
 <body class="body2">
     <header>
         <nav id="navegacion" >
@@ -18,15 +25,6 @@
         <br>
     </header>
 
-    <header >
-        <div id="ribbon"></div>
-
-        <h1 class="casititulo">Swords & Girls</h1>
-
-
-    </header>
-
-
     <div class="wrapper">
         <form action="https://formspree.io/myynqajj"
         method="POST">
@@ -35,13 +33,14 @@
         <div class="contact-form">
             <div class="input-fields">
                 <input type="text" name="name" class="input" placeholder="Nombre">
-                <input type="text" class="input" placeholder="Apellido">
+                <input type="text" name="surname" class="input" placeholder="Apellido">
                 <input type="email" name="_replyto" class="input" placeholder="Email">
-                <input type="text" class="input" placeholder="Asunto">
+                <input type="text" name="asunto" class="input" placeholder="Asunto">
             </div>
                 <div class="msg">
-                <textarea placeholder="Mensaje"></textarea>
+                <textarea name="message" placeholder="Mensaje"></textarea>
                 <button class="btn" type="submit" value="send">Enviar</button>
+                
                 </div>
             </form>
         </div>
