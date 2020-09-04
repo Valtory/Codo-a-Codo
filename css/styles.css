@@ -15,7 +15,7 @@ body{
 }
 .body{
     font-family: 'Lora';
-    background: url(images/fondo.jpg);
+    background: url(../images/fondo.jpg);
     background-repeat: repeat;
 }
 
@@ -150,9 +150,16 @@ nav{
     padding: 1px;
 }
 
-.p.pie{
+.pie p{
     font-weight: bold;
 }
+
+.pie i{
+    color: white;
+    font-size: 25px;
+
+}
+
 
 
 /* Bandera al lado del H1 titulo principal de la pagina */
@@ -184,7 +191,7 @@ nav{
     .segundotitulo h2{
         text-align: center;
         font-size: 2em ;
-        border-radius: 20px;
+        padding-top: 1em;
     }
 
     .segundotitulo p{
@@ -238,7 +245,7 @@ nav{
     max-width: 550px;
     background:rgba(0, 0, 0, 0.8);
     padding: 30px;
-    border-radius: 5 px;
+    border-radius: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 .wrapper .title h1 {
