@@ -17,6 +17,7 @@ body{
     font-family: 'Lora';
     background: url(../images/fondo.jpg);
     background-repeat: repeat;
+    height: auto;
 }
 
 .body::before{
@@ -145,19 +146,27 @@ nav{
     text-align:center;
     margin-bottom: 5px;
     margin-top: 5px;
-    background-color: #9d95e3;
     width: 100%;
     padding: 1px;
+    background-color: rgba(156, 124, 231, 0.7);
 }
 
 .pie p{
-    font-weight: bold;
+    color: white;
+    margin: 10px;
+    margin-top: 0;
+
 }
 
 .pie i{
     color: white;
     font-size: 25px;
 
+}
+
+.pie img{
+    width: auto;
+    max-width: 5%;
 }
 
 
@@ -184,8 +193,7 @@ nav{
     .segundotitulo{
         align-content: center;
         text-align: center;
-        margin: 0;
-        
+        margin: 0;        
     }
 
     .segundotitulo h2{
@@ -205,7 +213,10 @@ nav{
         background-color: rgba(255, 255, 255, 0.5);
         border-radius: 20px;
         box-sizing: content-box;
-        margin: 10em;
+        margin-top: 10em;
+        margin-bottom: 3em;
+        margin-left: 20em;
+        margin-right: 20em;
     }
 
 
