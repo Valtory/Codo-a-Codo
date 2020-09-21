@@ -1,0 +1,17 @@
+.contenedor{
+    display:grid;
+    grid-template-columns: 20em 20em 20em;
+    grid-template-rows: 23em 23em 23em;
+    grid-area: 10em;
+	
+}
+
+.shape2 {
+    display: inline-block;
+    width: 250;
+    height: 250;
+    border: 5px solid #9d95e3;
+    border-radius: 30px 30px 30px 30px;
+    padding: auto;
+    
+}
