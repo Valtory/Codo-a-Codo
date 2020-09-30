@@ -78,6 +78,10 @@ nav ul li a{
     text-decoration: none;
 }
 
+iframe{
+    width: auto;
+    height: auto;
+}
 
 .navegacion a{
     margin-top: 3%;
@@ -217,10 +221,7 @@ background-size: cover;
         
     }
     
-iframe{
-    width:522;
-    height:300;
-}
+
 /* Propiedades de la clase del segundo titulo > Una mujer puede Jugar con espadas?  */
     .segundotitulo{
         align-content: center;
