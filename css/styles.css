@@ -255,7 +255,7 @@ background-size: cover;
         padding: 1em;
         }
     .segundotitulo td{
-        padding: 1em;
+        padding: 0.5em;
     }
 
     .fondo_traslucido {
@@ -621,6 +621,14 @@ msg{
             iframe{
                 width: 260px;;
                 height:152px;
+            }
+            #a, #b, #c{
+                display:block;
+        padding: 7px;
+        width: 70%;
+        border-radius: 20px;
+        box-sizing: content-box;
+        
             }
         }
 }
